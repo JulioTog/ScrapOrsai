@@ -31,7 +31,7 @@ try:
     print(cantidad)
     f = open("resutlt.txt","a")
     f.write(cantidad + " ---> " + monto + " ---> " + time.asctime( time.localtime(time.time()) ) +"\n")
-    if int(cantidad) < 250 :
+    if int(cantidad) < 100 :
         winsound.PlaySound('test.wav', winsound.SND_FILENAME)
 finally:
     print("QUIT")
